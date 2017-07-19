@@ -6,10 +6,11 @@ android {
     defaultConfig {
         applicationId "com.javaandroid.main"
         minSdkVersion 19
-        targetSdkVersion 25
+        targetSdkVersion 22
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
     }
     buildTypes {
         debug{
@@ -44,4 +45,6 @@ dependencies {
     compile 'org.ligboy.retrofit2:converter-fastjson-android:2.1.0'
     testCompile 'junit:junit:4.12'
     compile 'com.jakewharton:butterknife:7.0.1'
+    //compile 'com.androidadvance:topsnackbar:1.1.1'
+    compile project(':topsnackbar')
 }
