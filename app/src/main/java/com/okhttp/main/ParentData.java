@@ -1,12 +1,13 @@
 package com.okhttp.main;
 
+import java.io.Serializable;
 import java.util.List;
 
 /**
  * Created by Administrator on 2017/3/9 0009.
  */
 
-public class ParentData {
+public class ParentData implements Serializable {
 
     /*
     * http://ad.wodpy.com:81/meplusd/hotVideoHome.html
@@ -55,7 +56,7 @@ public class ParentData {
         this.data = data;
     }
 
-    public static class DataBean {
+    public static class DataBean implements Serializable {
         private List<String> banner;
         private List<ListHotBean> listHot;
 
@@ -83,7 +84,7 @@ public class ParentData {
             this.listHot = listHot;
         }
 
-        public static class ListHotBean {
+        public static class ListHotBean implements Serializable {
             /**
              * activityCategory :
              * activityId : 12226791488859866524

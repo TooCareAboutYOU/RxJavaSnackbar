@@ -1,5 +1,6 @@
 package com.rxjava.android;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.os.SystemClock;
 import android.support.v7.app.AppCompatActivity;
@@ -64,6 +65,7 @@ public class RxJavaActivity extends AppCompatActivity {
         * 要使用 AndroidSchedulers 还需要引入 RxAndroid:
         * compile 'io.reactivex.rxjava2:rxandroid:2.0.0'
         * */
+    @SuppressLint("CheckResult")
     private void Test(){
         System.out.println("---------------------华丽分割线---------------------------");
         Flowable.create(new FlowableOnSubscribe<String>() {

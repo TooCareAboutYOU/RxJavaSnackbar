@@ -1,1 +1,1 @@
-include ':app', ':java_android', ':topsnackbar'
+include ':app', ':java_android', ':topsnackbar', ':myapplication', ':model-rxjava'

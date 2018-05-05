@@ -1,13 +1,13 @@
 package com.okhttp.main;
 
+import java.io.Serializable;
 import java.util.List;
 
 /**
  * Created by Administrator on 2017/3/9 0009.
  */
 
-public class UserListBean {
-
+public class UserListBean implements Serializable {
 
     /*
     * http://ad.wodpy.com:81/meplusd/attentionVideoHome.html?uid=23434&version=1.0&plat=a
@@ -56,7 +56,7 @@ public class UserListBean {
         this.data = data;
     }
 
-    public static class DataBean {
+    public static class DataBean implements Serializable {
         private List<OtherBean> other;
 
         @Override
@@ -74,7 +74,7 @@ public class UserListBean {
             this.other = other;
         }
 
-        public static class OtherBean {
+        public static class OtherBean implements Serializable {
             /**
              * activityCategory :
              * activityId : 11216611488355155832i

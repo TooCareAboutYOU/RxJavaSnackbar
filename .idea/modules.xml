@@ -6,6 +6,8 @@
       <module fileurl="file://$PROJECT_DIR$/RxJavaSnackbar.iml" filepath="$PROJECT_DIR$/RxJavaSnackbar.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/java_android/java_android.iml" filepath="$PROJECT_DIR$/java_android/java_android.iml" />
+      <module fileurl="file://$PROJECT_DIR$/model-rxjava/model-rxjava.iml" filepath="$PROJECT_DIR$/model-rxjava/model-rxjava.iml" />
+      <module fileurl="file://$PROJECT_DIR$/myapplication/myapplication.iml" filepath="$PROJECT_DIR$/myapplication/myapplication.iml" />
       <module fileurl="file://$PROJECT_DIR$/topsnackbar/topsnackbar.iml" filepath="$PROJECT_DIR$/topsnackbar/topsnackbar.iml" />
     </modules>
   </component>

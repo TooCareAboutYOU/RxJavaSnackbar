@@ -8,14 +8,14 @@ import com.javaandroid.main.R;
 
 import java.util.HashMap;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 public class OKhttpActivity extends AppCompatActivity {
 
 
-    @Bind(R.id.tv_show)
-    TextView tvShow;
+    @BindView(R.id.tv_show)
+    TextView mTvShow;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,25 +40,17 @@ public class OKhttpActivity extends AppCompatActivity {
                         0,
                         map,
                         new ReqCallBack<UserListBean>() {
-                    @Override
-                    public void onReqSuccess(UserListBean result) {
-                        System.out.println(result.toString());
-                        tvShow.setText(result.toString());
-                    }
+                            @Override
+                            public void onReqSuccess(UserListBean result) {
+                                System.out.println(result.toString());
+                                mTvShow.setText(result.toString());
+                            }
 
-                    @Override
-                    public void onReqFailed(String errorMsg) {
-                        System.out.println(errorMsg);
-                    }
-                });
+                            @Override
+                            public void onReqFailed(String errorMsg) {
+                                System.out.println(errorMsg);
+                            }
+                        });
     }
-
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-        ButterKnife.unbind(this);
-
-    }
-
 }
 
